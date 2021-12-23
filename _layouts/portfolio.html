@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<h1>Popular Projects</h1>
+<div class="projects">
+<ul>
+{% for project in page.projects %}
+  <li class="project" data-title="{{project[0]}}" data-color="{{project[1].color}}">
+    <a href="{{project[1].url}}" title="{{project[0]}}">{{project[0]|upcase}}</a>
+    <ul class="innerdetail">
+      <li>{{project[1].desc}}</li>
+    </ul>
+  </li>
+{% endfor %}
+</ul>
+</div>
+
+{{ content }}
+<script src="/js/geopattern.min.js"></script>
+<script>
+  var patterns = ['octogons', 'plusSigns', 'xes', 'squares', 'nestedSquares', 'concentricCircles']
+  projects = [...document.getElementsByClassName('project')];
+  for(var i in projects){
+    var project = projects[i];
+    var pattern = GeoPattern.generate(project.getAttribute('data-title'), {
+      color: project.getAttribute('data-color'),
+      generator: patterns[Math.floor(Math.random() * patterns.length)]
+    });
+    project.style.backgroundImage = pattern.toDataUrl();
+  }
+</script>

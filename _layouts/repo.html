@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<table class="repo-buttons">
+  <tbody>
+    <tr>
+      <td>
+        <a class="github-button" href="https://github.com/{{page.repo}}" data-icon="octicon-eye" data-count-href="/{{page.repo}}/watchers" data-count-api="/repos/{{page.repo}}#subscribers_count">Watch</a>
+      </td>
+      <td>
+        <a class="github-button" href="https://github.com/{{page.repo}}" data-icon="octicon-star" data-count-href="/{{page.repo}}/stargazers" data-count-api="/repos/{{page.repo}}#stargazers_count">Star</a>
+      </td>
+      <td>
+        <a class="github-button" href="https://github.com/{{page.repo}}" data-icon="octicon-git-branch" data-count-href="/{{page.repo}}/network" data-count-api="/repos/{{page.repo}}#forks_count">Fork</a>
+      </td>
+      <td>
+        <a class="github-button" href="https://github.com/{{page.repo}}/issues" data-icon="octicon-issue-opened" data-count-api="/repos/{{page.repo}}#open_issues_count">Issue</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div id="readme">
+  <div style="width:500px; margin: 0 auto; text-align: center">
+    Please wait
+    <br>
+    Loading content directly from GitHub. If this does not load, 
+    try opening the <a href="https://github.com/{{page.repo}}">repository</a> directly.
+
+    <br>
+    <img style="margin: 0px auto;" src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif"
+      height="128" width="128">
+  </div>
+</div>
+
+<div class="sourcelink" style="display:none">You can view the source code for this project <a href="https://github.com/{{page.repo}}">here</a>.</div>
+<script>
+  var GITHUB_README_URL = "https://api.github.com/repos/{{page.repo}}/readme"
+</script>
+
+<script src="/js/github.js"></script>
+<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>

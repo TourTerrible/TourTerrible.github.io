@@ -1,9 +1,12 @@
+---
+layout: nil
+---
 <!DOCTYPE html>
 <html lang="en-us">
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-nemo">
 
     {% include sidebar.html %}
 
@@ -13,7 +16,7 @@
       <div class="masthead">
         <div class="container">
           <h3 class="masthead-title">
-            <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+            <a href="/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
         </div>
@@ -26,6 +29,25 @@
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
-    <script src='{{ site.baseurl }}/public/js/script.js'></script>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+    <!-- TODO: Move lightbox to compiler -->
+    <script type="text/javascript" src="/js/lightbox.js"></script>
+    <link rel="stylesheet" href="/public/lightbox.css">
   </body>
 </html>
