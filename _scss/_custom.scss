@@ -1,0 +1,328 @@
+@import "outer-container";
+
+// Intro in the home screen
+
+$max-width: 48em;
+@media screen and (min-width: 1025px) {
+  .intro {
+    border: 1px solid #dddddd;
+    border-radius: 16px;
+    margin: 1%;
+  }
+}
+
+.intro > div > p > a .fa {
+  font-size: 32px !important;
+}
+
+.intro > .head-intro {
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.intro h2 {
+  text-align: center;
+  margin: 8px;
+}
+
+.intro .about-me-button {
+  display: block;
+  margin: 24px auto;
+  padding: 0.7em 1.25em;
+  font-size: 1em;
+  border-radius: 8px;
+  border-color: #75b5aa;
+  font-weight: 500;
+  color: white;
+  word-spacing: 1px;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.intro .about-me-button:hover {
+  background-color: #333;
+  color: #515151;
+}
+
+.head-cover {
+  display: block;
+  width: 120px !important;
+  height: 120px;
+  border: 2px solid #999999;
+  border-radius: 50%;
+  margin-top: 32px !important;
+  margin-bottom: 32px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.soc-med {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.soc-med a {
+  font-size: 2em;
+  margin: 8px 16px;
+}
+
+.wrapper {
+  @include outer-container;
+  padding: 1em;
+}
+
+// Projects
+
+.projects {
+
+  .project {
+    height: 140px;
+    width: 100%;
+    text-align: center;
+    border-radius: 3px;
+    background: #8b8c87;
+    overflow: hidden;
+    object-fit: cover;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -o-transition: background .3s;
+    transition: background .3s;
+    display: inline-block;
+    margin: 0;
+
+    a {
+      color: white !important;
+      text-decoration: none;
+      font-size: 1.3em !important;
+    }
+  }
+}
+
+.cards {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+}
+
+.cards .card {
+  width: 100%;
+  margin: 2% 0;
+}
+
+.card {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: .25rem;
+}
+
+.cards .card-body {
+  padding: 0 1rem 1rem;
+}
+
+.cards .card-title {
+  margin: .3rem 0 .3rem;
+  //margin-bottom: .75rem;
+}
+
+.card-body .card-language {
+  font-style: italic;
+}
+
+@media screen and (min-width: 768px) {
+
+  .cards {
+    width: 120%;
+    margin: 0 -10%;
+  }
+
+  .cards .card {
+    width: 44%;
+    margin: 3%;
+  }
+
+}
+
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0;
+}
+
+ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+
+// Post meta data
+
+.post-meta {
+  @include outer-container;
+  display: block;
+  margin-top: -.5rem;
+  margin-bottom: 1rem;
+  color: #9a9a9a;
+
+  .left-align {
+    display: inline-block;
+    text-align: left;
+    font-size: 0.9em;
+  }
+
+  .right-align {
+    float: right;
+    font-size: 0.9em;
+  }
+}
+
+// Footer
+
+.site-footer {
+  $link-color: #FFFFFF;
+  padding: 1%;
+  color: #515151;
+  text-align: center;
+  margin-top: auto;
+
+  a {
+    &:active,
+    &:focus,
+    &:active,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .wrapper {
+    @include outer-container;
+  }
+
+  .footer-heading {
+
+  }
+}
+
+.site-footer .credit {
+  font-size: 0.8em;
+}
+
+@media screen and (min-width: 768px) {
+  .site-footer .credit {
+    font-size: 0.9em;
+  }
+}
+
+// Experience
+.card-language {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.toggle {
+  touch-action: pan-x;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  position: relative;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.displayOnlyInLargeViewport {
+  margin-left: auto;
+}
+
+.displayOnlyInSmallViewport {
+  top: 2px;
+  display: none;
+}
+
+.toggle-track {
+  position: relative;
+  width: 50px;
+  height: 24px;
+  padding: 0;
+  border-radius: 30px;
+  background-color: #4d4d4d;
+  transition: all .2s ease;
+}
+
+.toggle-track-check {
+  position: absolute;
+  width: 14px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  left: 8px;
+  transition: opacity .25s ease;
+}
+
+.toggle-track-x {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 0;
+  right: 10px;
+  opacity: 100;
+  transition: opacity .25s ease;
+}
+
+.toggle_BsTx {
+  align-items: center;
+  display: flex;
+  height: 10px;
+  justify-content: center;
+  position: relative;
+  width: 10px;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 22px;
+  height: 22px;
+  background-color: #fafafa;
+  border-radius: 50%;
+  box-sizing: border-box;
+  transition: all .25s ease;
+}
+
+.toggle-screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// To remove transitions from css (unused)
+.no-transition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

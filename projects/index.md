@@ -2,66 +2,122 @@
 layout: portfolio
 title: List Of Projects
 projects:
-  endoflife.date:
-    desc: A website to track EoL of projects
-    color: "#DB8D17"
-    url: https://endoflife.date/
-  ideas:
-    desc: Ideas for everyone under a CC licence. Feel free to use.
-    url: https://github.com/captn3m0/ideas/
-  hackertray:
-    desc: A system-tray Hacker News app for Linux
-    color: "#FF851B"
-    url: https://github.com/captn3m0/hackertray
-  hackercouch:
-    desc: CouchSurfing for Hackers
-    color: "#B10DC9"
-    url: https://hackercouch.com
-  rss:
-    desc: A list of various RSS-related projects
-    color: "#3498db"
-    url: /projects/rss
-  ebooks:
-    desc: Multiple Scrapers for online content that generates EPUB/MOBI files
-    color: "#85144B"
-    url: /ebooks/
+  Network streaming analytics systems for last-mile networks:
+    desc: Capture packet-level data from the last mile network (end-users devices like home routers).
+    color: "#003660"
+    url: https://docs.google.com/presentation/d/1mWfYzblyGt0pJsIyWUfN_hJ8c3bJm8ZCMXgchbn23-k/edit?usp=sharing
+    tech: eBPF, BCC, Wireshark
+  Appetizer:
+    desc: Official mobile application for IIT Roorkee aiming towards the management of mess functionalities. I worked as the Backend Head and Product Manager
+    color: "#FBC014"
+    url: https://mess.iitr.ac.in/
+    tech: Python-Django, JS, Postgres, AWS, Docker, Firebase
+  Codephile:
+    desc: A Social networking application for competitive coders. I worked as the Backend Lead for the project.
+    color: "#499BFF"
+    url: https://codephile.mdg.iitr.ac.in/
+    github: https://github.com/mdg-iitr/codephile-backend
+    tech: Golang, Redis, ElastiCache, ElasticSearch, AWS, Firebase, MongoDB, Bee
+  NpChat:
+    desc: Media-sharing peer-to-peer decentralised application built for Android on Named Data Network (ICN). With the app, wrote the AIMD pipelined Segment-Fetcher for their Java Support Library.
+    color: "#7102A0"
+    tech: NDN, Java, Android
+    url: https://summerofcode.withgoogle.com/archive/2019/projects/4940146259001344/
+    github: https://github.com/named-data-mobile/ndn-photo-app
+  Security App:
+    desc: App to digitize the physical security at IIT Roorkee.
+    color: "#5EA0CA"
+    url: https://play.google.com/store/apps/details?id=in.ac.iitr.mdg.securityapp
+    tech: Python-Django, Postgres, AWS, Docker
+  Vault:
+    desc: Symmetric Key based data backup & recovery utility.
+    color: "#89E051"
+    github: https://github.com/dev-ritik/vault
+    tech: Linux, Bash, find, gpg, pass
+  Elections-2021:
+    desc: Live Streaming setup for West Bengal results 2021
+    color: "#E2261C"
+    url: https://www.youtube.com/watch?v=AHXu84uznMc
+    tech: Flask, React, Selenium, OBS
+  ShuffleWallpaper:
+    desc: Shuffle and set wallpaper for Ubuntu
+    color: "#19A6B8"
+    github: https://github.com/dev-ritik/ShuffleWallpaper
+    tech: Linux, Bash
+  EmojiReactionView:
+    desc: An Android library to make Emoji Reactions on images in a manner Instagram does this!
+    color: "#0E5586"
+    github: https://github.com/dev-ritik/EmojiReactionView
+    tech: Java, Android
+  news:
+    desc: Fake news building and hosting website.
+    color: "#ff4321"
+    github: https://github.com/dev-ritik/news
+    tech: Python-Django, JS, Postgres
+  LoginAction:
+    desc: Library to help make login activity with Firebase
+    color: "#FFCB2B"
+    tech: Java, Android
+    github: https://github.com/dev-ritik/LoginAction
+  Sarah:
+    desc: Personal time and location based reminder assistant.
+    color: "#239923"
+    github: https://github.com/codekaust/Sarah
+    tech: Java, Android
 ---
 
-## Projects by Date
+## Open Source Contributions
+[Jinora](https://github.com/mdg-iitr/jinora)
+: Slack webhook app to create anonymous public channels. Written in `Coffeescript`, it is deployed on `Heroku`
 
-All the projects below are under a FOSS license (mostly MIT). This page does not include contributions to other projects. Most projects are still maintained, unless stated otherwise. 
+[Hubot MDG](https://github.com/mdg-iitr/bot)
+: An internal bot for Mobile Development Group. Written in `Coffeescript`, it is deployed on `AWS`
 
-[which-electron][we] <small>#nodejs</small>
-: **July 2021** Find out which Electron version is bundled inside an application.
+[jndn](https://github.com/named-data/jndn)
+: Implementation of a `Named Data Networking` client library written in Java.
 
-[electron-fingerprints][efp] <small>#nodejs #php</small>
-: **July 2021** Fingerprints of electron releases that can be used to guess electron version of applications.
+[NpChat](https://github.com/named-data-mobile/ndn-photo-app)
+: A photo and file sharing application built on Android inspired by Snapchat. The project's goals are to develop a
+completely decentralized application that runs over the `Named Data Network` (NDN), utilize a partial sync protocol,
+and use a `Web-Of-Trust` like model instead of the traditional NDN hierarchical model.
 
+[android-identity-manager](https://github.com/zhtaoxiang/android-identity-manager)
+: Android identity manager for `Named Data Network` based applications to store certificates.
 
-## Packages
+[Rotating Text](https://github.com/mdg-iitr/RotatingText)
+: Android library that can be used to make text switching painless and beautiful.
 
-I maintain a few packages on the [ArchLinux User Repository](https://aur.archlinux.org/packages/?SeB=m&K=captn3m0 "List to packages maintained by me on AUR").
+[Croller](https://github.com/harjot-oberai/Croller)
+: Circular Seekbar for Android. Widely customisable and used for java based Android apps.
 
-Package|Upstream
--------|-----
-[`signal-desktop-beta-bin`](https://aur.archlinux.org/packages/signal-desktop-beta-bin/)|[WhisperSystems/Signal-Desktop](https://github.com/WhisperSystems/Signal-Desktop)
-[`koreader-appimage`](https://aur.archlinux.org/packages/koreader-appimage/)|[koreader.rocks](http://koreader.rocks/)
-[`karn`](https://aur.archlinux.org/packages/karn/)|[prydonius/karn](https://github.com/prydonius/karn)
-[`shubhcron`](https://aur.archlinux.org/packages/shubhcron/)|[razorpay.com/shubhcron](https://razorpay.com/shubhcron/)
-[`elibsrv`](https://aur.archlinux.org/packages/elibsrv/)|[elibsrv.sourceforge.net](http://elibsrv.sourceforge.net)
+[Rocket.Chat.Kotlin.SDK](https://github.com/RocketChat/Rocket.Chat.Kotlin.SDK)
+: `Rocket.Chat`'s Kotlin SDK (REST & WebSocket abstractions).
 
-## Older Projects
+[Rocket.Chat.Android](https://github.com/RocketChat/Rocket.Chat.Android)
+: `Rocket.Chat` Android native application written in Kotlin.
 
-You might wanna take a look at my [github](https://github.com/captn3m0), [NPM](https://www.npmjs.com/~captn3m0), [PyPI](https://pypi.org/user/captn3m0/), [Packagist](https://packagist.org/users/captn3m0/), [Rubygems](https://rubygems.org/profiles/captn3m0), or [AUR](https://aur.archlinux.org/packages/?K=captn3m0&SeB=m) profile pages. Most of the following projects are no longer under active development. Ther's also a lot of work missing here that I did while at [SDSLabs](https://sdslabs.co/). Some of these projects are mirrored on my [Gitea server](https://git.captnemo.in/nemo/).
+## Academic Projects
 
-- [Sympathy Editor](/sympathy) - Local File Editor Extension For Chrome (using NPAPI) ([source](https://github.com/captn3m0/sympathy), [blog post](http://captnemo.in/blog/2012/05/20/sympathy-editor/)). Now DEPRECATED.
-- Geo_Rss Demo for multiple layers on a Google Map - [Geo RSS](./geo_rss/)
-- [CodeChef Repo Browser](/codechef/) - An offline practice problem viewer for [Codechef](http://codechef.com). ([source](https://github.com/captn3m0/codechef/)) <small>#javascript #pushstate</small>
-- [Akira](http://captnemo.in/blog/2012/05/23/phonegap-blog-post/) - Winning entry to the Adobe Express Apps Contest @ Cognizance 2012. ([source](https://github.com/captn3m0/akira)) <small>#mobile #phonegap</small>
-- [CNEditor](https://github.com/captn3m0/cneditor) - A single file browser/editor for PHP. #php #security #pen-testing
+[Secure-file-transfer](https://github.com/dev-ritik/Secure-file-transfer)
+: `CSN 503 Advanced Computer Networks` course project for transferring encrypted file for corporate networks. The files
+are secured using `RSA` to encrypt and decrypt messages. The project utilizes `asymmetric keychain cert chain`-based
+approach to establish identity and prevent `MITM` attacks
 
-## Very Old Projects
+[Distributed Clocks](https://github.com/dev-ritik/distributed_clocks)
+: Demonstration of `Lamport's Logical` and `Vector` clocks for `CSN 502 Advanced Operating System` course work.
 
-- [Hacker](https://github.com/captn3m0/hacker) - Hacking Game Simulator in written in 8th grade #turbocpp
+[Peer2PeerTube](https://github.com/dev-ritik/Peer2PeerTube)
+: A live video streaming computer platform based on peer-to-peer architecture. A proper set of pre-decided formatted
+messages are used to exchange information.
 
-[cosmere]: https://github.com/captn3m0/cosmere-books
+[AIMD-implementation](https://github.com/dev-ritik/AIMD-implementation)
+: Implementation of `AIMD congestion control pipe-lining` in Java for `CSN-341 Computer Networks`.
+
+[OS_Assignment](https://github.com/dev-ritik/OS_Assignment)
+: Operating System Assignment on problems like `Cigarette_Smokers`.
+
+[Files-Share](https://github.com/dev-ritik/files_share)
+: Terminal based File sharing application using sockets based `TCP/IP` stack.
+
+[Calculator](https://github.com/dev-ritik/calculator)
+: A calculator using `Verilog` (modular programming in hardware description language or `HDL`) with GUI.

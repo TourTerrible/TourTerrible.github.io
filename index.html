@@ -1,0 +1,81 @@
+---
+layout: default
+title: Home
+---
+
+<div class="intro wrapper">
+  <img class="head-cover" src="{{ site.head }}" alt="Display pic">
+  <h2>Abdul Ahad</h2>
+  <p class="head-intro">
+    Final Year Undergraduate @ IIT Guwahati
+    <br>
+    Upcoming Software Analyst @ Goldman Sachs
+  </p>
+
+  <a href="/about" class="about-me-a">
+    <button class="about-me-button">
+      About Me &nbsp;<i class="fa fa-arrow-right"></i>
+    </button>
+  </a>
+
+  <div class="soc-med">
+    <a href="mailto:ahad.jnv22@gmail.com"><i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i></a>
+    <a href="https://github.com/tourterrible"><i class="fa fa-github" aria-hidden="true"></i></a>
+    <a href="https://www.linkedin.com/in/ahadabd"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+    <a href="https://www.instagram.com/__.ahad.___/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+    <a href="https://www.facebook.com/i.m.abdul.ahad/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+  </div>
+</div>
+
+<br>
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1 class="post-title">
+      {% if post.medium %}
+      <a href="{{ post.medium | absolute_url }}">
+      {% else %}
+      <a href="{{ post.url | absolute_url }}">
+      {% endif %}
+      {{ post.title }}
+      </a>
+    </h1>
+
+    <section class="post-excerpt" itemprop="description">
+<!--      https://gist.github.com/mikeygee/2626538-->
+      {{ post.content | split:'<!--break-->' | first }}
+      {% if post.medium %}
+      <a href="{{ post.medium }}">read more...</a>
+      {% else %}
+      <a href="{{ post.url }}">read more...</a>
+      {% endif %}
+    </section>
+    <br>
+    <section class="post-meta">
+      <div class="left-align"><i class="fa fa-calendar"></i> {{ post.date | date: "%B %-d, %Y" }}</div>
+      {% include reading-time.html %}
+    </section>
+  </div>
+  {% if forloop.last == false %}
+  <hr>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+  <a class="pagination-item older" href="{{ paginator.next_page_path | absolute_url }}">Older</a>
+  {% else %}
+  <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+  {% if paginator.page == 2 %}
+  <a class="pagination-item newer" href="{{ '/' | absolute_url }}">Newer</a>
+  {% else %}
+  <a class="pagination-item newer" href="{{ paginator.previous_page_path | absolute_url }}">Newer</a>
+  {% endif %}
+  {% else %}
+  <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>

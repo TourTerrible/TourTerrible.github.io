@@ -3,35 +3,56 @@ layout: default
 ---
 
 <h1>Active Projects</h1>
-<div class="projects">
-<ul>
-{% for project in page.projects %}
-{% if project[1].url %}
-  {% assign url = project[1].url %}
-{% else %}
-  {% assign url = "/" | append: project[0] | append: "/" %}
-{% endif %}
-  <li class="project" data-title="{{project[0]}}" data-color="{{project[1].color}}">
-    <a href="{{url}}">{{project[0]|upcase}}</a>
-    <ul class="innerdetail">
-      <li>{{project[1].desc}}</li>
+<div class="cards projects">
+  {% for project in page.projects %}
+  <div class="card">
+    <img class="card-img-top project" data-title="{{project[0]}}" data-color="{{project[1].color}}"  />
+    <div class="card-body">
+      <h2 class="card-title">{{ project[0] }}</h2>
+      <p class="card-text">{{ project[1].desc }}</p>
+      {% if project[1].github %}
+      <a href="{{ project[1].github }}"><i class="fa fa-github"></i>&nbsp;&nbsp;Project GitHub Link</a><br>
+      {% else%}
+      <span class="not-available"><i class="fa fa-github"></i>&nbsp;&nbsp;Not Available<br></span>
+      {% endif %}
+      {% if project[1].url %}
+      <a href="{{ project[1].url }}"><i class="fa fa-link"></i>&nbsp;&nbsp;Web Link</a>
+      {% else%}
+      <span class="not-available"><i class="fa fa-link"></i>&nbsp;&nbsp;Not Available</span>
+      {% endif %}
+      <p class="card-language"><i class="fa fa-code"></i>&nbsp;&nbsp;{{ project[1].tech }}</p>
+    </div>
+    {% if project[1].github %}
+    <ul class="actions">
+      <li><a class="github-button" href="{{ project[1].github }}/archive/master.zip" aria-label="Download on GitHub">Download</a>
+      </li>
+      <li><a class="github-button" href="{{ project[1].github }}" data-show-count="true" aria-label="Star on GitHub">Star</a>
+      </li>
+      <li><a class="github-button" href="{{ project[1].github }}/fork" data-show-count="true"
+             aria-label="Fork on GitHub">Fork</a></li>
     </ul>
-  </li>
-{% endfor %}
-</ul>
+    {% else %}
+    <ul class="actions">
+      <li style="color:red;">Project source code is not open sourced</li>
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+  <!-- GitHub buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
 </div>
 
 {{ content }}
-<script src="/js/geopattern.min.js"></script>
+<script src="/public/js/geopattern.min.js"></script>
 <script>
-  var patterns = ['octogons', 'plusSigns', 'xes', 'squares', 'nestedSquares', 'concentricCircles']
+  const patterns = ['chevrons', 'octogons', 'plusSigns', 'xes', 'triangles', 'squares', 'nestedSquares', 'concentricCircles', 'diamonds'];
   projects = [...document.getElementsByClassName('project')];
-  for(var i in projects){
-    var project = projects[i];
-    var pattern = GeoPattern.generate(project.getAttribute('data-title'), {
-      color: project.getAttribute('data-color'),
+  for (const i in projects) {
+    let project = projects[i];
+    const pattern = GeoPattern.generate(project.getAttribute("data-title"), {
+      color: project.getAttribute("data-color"),
       generator: patterns[Math.floor(Math.random() * patterns.length)]
     });
-    project.style.backgroundImage = pattern.toDataUrl();
+    project['style'].backgroundImage = pattern.toDataUrl();
   }
 </script>

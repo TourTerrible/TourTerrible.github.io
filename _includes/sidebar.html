@@ -1,21 +1,35 @@
-<!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
-     styles, `#sidebar-checkbox` for behavior. -->
 <input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
   <div class="sidebar-item">
-    <p>{{ site.description }}</p>
+    <br>
+    <div class="image">
+      <img class="thumbnail" src="/public/assets/pic.jpeg" alt="">
+    </div>
   </div>
 
   <nav class="sidebar-nav">
     <a class="sidebar-nav-item" href="/">Home</a>
-    <a class="sidebar-nav-item" title="About" href="/about/">About</a>
+    <a class="sidebar-nav-item" title="About" href="/about.html">About</a>
     <a class="sidebar-nav-item" title="My Projects" href="/projects/">Projects</a>
-    <a class="sidebar-nav-item" title="My Blogs" href="/blogs/">Blogs</a>
-    <a class="sidebar-nav-item" title="Contact Me" href="/contact/">Contact</a>
+    <a class="sidebar-nav-item" href="/archive.html">Blogs</a>
+    <a class="sidebar-nav-item" title="Résumé" href="https://ritik.ml/resume/resume.pdf" target="_blank" rel="noopener">Résumé</a>
   </nav>
 
-
-
+  <div class="sidebar-item">
+    <p style="margin-bottom: 0">
+      <a href="https://github.com/TourTerrible/TourTerrible.git" title="Source Code" target="_blank" rel="noopener">
+        Source
+      </a>
+    </p>
+    <div class="toggle displayOnlyInSmallViewport" onclick="modeSwitcher()">
+      <div class="toggle-track">
+        <div class="toggle-track-check"><span class="toggle_BsTx">🌜</span></div>
+        <div class="toggle-track-x"><span class="toggle_BsTx">🌞</span></div>
+      </div>
+      <div class="toggle-thumb"></div>
+      <input type="checkbox" class="toggle-screen-reader-only" id="toggle-mode-cb"/>
+    </div>
+  </div>
 </div>

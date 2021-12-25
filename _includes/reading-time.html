@@ -1,0 +1,17 @@
+{% capture time %}
+{% if page.name == "index.html" and post.time %}
+{{ post.time }}
+{% elsif page.name == "index.html" %}
+{{ page.content | number_of_words | divided_by: 150 }}
+{% elsif page.time %}
+{{ page.time }}
+{% else %}
+{{ content | number_of_words | divided_by: 150 }}
+{% endif %}
+{% endcapture %}
+{% unless time contains '-' or time contains 0 %}
+<div class="post-readtime right-align"><i class="fa fa-clock-o" aria-hidden="true"></i>
+  {{ time | append: ' Minutes Read' }}
+</div>
+
+{% endunless %}
