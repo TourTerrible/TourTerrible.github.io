@@ -268,13 +268,13 @@ a.sidebar-nav-item {
 
   &:active {
     color: #fff;
-    background-color: #505050;
+    background-color: #e9e7e7;
   }
 }
 
 #sidebar-checkbox:checked ~ .sidebar-toggle {
   color: #fff;
-  background-color: #505050;
+  background-color: #2a2a2a;
 }
 
 @media (min-width: 30.1em) {

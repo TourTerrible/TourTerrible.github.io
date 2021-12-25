@@ -1,19 +1,20 @@
 ---
-title: Internship @ Amazon
-date: 2019-08-25
+title: Internship at Amazon India
+date: 2021-08-01
 layout: post
 # url:
-medium: https://medium.com/inplace/interning-at-amazon-abdul-ahad-ef2565dd8e66
+# medium: https://medium.com/inplace/interning-at-amazon-abdul-ahad-ef2565dd8e66
 time: 6
 ---
 
-_I am Abdul Ahad, an undergrad student at IIT Guwahati, class of 2022, pursuing a major in Electronics and Electrical Engineering. Here, I would be sharing my experience doing an internship at Amazon, the selection process, and how I prepared for it._
+_In this post, I would be sharing my experience doing an internship at Amazon, the selection process, and how I prepared for it._
 
-<!--break-->
 
 ## **Preparation and Selection Tests**
 
 I read previous test experiences from GFG, and knew that Amazon asks the standard questions in online assessment. Also, I practiced questions from Interview Bit and company-specific ones from GFG.
+
+<!--break--> 
 
 ## **Round 1: Online Assessment**
 
