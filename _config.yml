@@ -4,25 +4,33 @@ collections:
     output: true
     permalink: /blog/:year/:month/:day/:title/
 
+# Setup
 title: Abdul Ahad
-email: ahad.jnv22@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-   <div class="image">
-     <img class="thumbnail" src="/img/pic.jpeg">
-   </div>
-   Hello There!
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: tour_terrible
-github_username:  tourterrible
+tagline: ''
 
-# Build settings
+url: 'https://tourterrible.github.io/'
+baseurl: ''
+paginate: 4
+permalink: pretty
+paginate_path: "/page/:num/"
+
+
+# About/contact
+author:
+  name: Abdul Ahad
+  url: https://www.instagram.com/__.ahad.___/
+theme: minima
 plugins:
-  - jekyll-feed
+  - jekyll-paginate
 
+# Sass settings
 sass:
   sass_dir: _scss
   style: :compressed
+# Custom vars
+version: 0.1.0
+head: "/public/assets/pic2.jpeg"
+
 exclude:
   - medium-to-markdown*
   - package*
