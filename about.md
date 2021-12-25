@@ -6,7 +6,7 @@ permalink: about.html
 
 Hello There!
 
-I'm Abdul Ahad, final year undergraduate pursuing bachelors in technology with major in Electronics and Electrical Engineering at [IIT Guwahati](https://www.iitg.ac.in/).
+I'm Abdul **Ahad**, final year undergraduate pursuing bachelors in technology with major in Electronics and Electrical Engineering at [IIT Guwahati](https://www.iitg.ac.in/).
 I held the position of Project Manager at [Robotics Club](https://www.facebook.com/robotics.iitg/) and worked on various project during my last three years at IITG.
 Last summer, I interned as software development engineer at [Amazon India](),
 and worked on relational database services offered by AWS.

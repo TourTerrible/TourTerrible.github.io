@@ -46,9 +46,9 @@ title: Home
 <!--      https://gist.github.com/mikeygee/2626538-->
       {{ post.content | split:'<!--break-->' | first }}
       {% if post.medium %}
-      <a href="{{ post.medium }}">read more...</a>
+      <a href="{{ post.medium }}">....</a>
       {% else %}
-      <a href="{{ post.url }}">read more...</a>
+      <a href="{{ post.url }}">....</a>
       {% endif %}
     </section>
     <br>

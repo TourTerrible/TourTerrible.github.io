@@ -12,9 +12,7 @@ _In this post, I would be sharing my experience doing an internship at Amazon, t
 
 ## **Preparation and Selection Tests**
 
-I read previous test experiences from GFG, and knew that Amazon asks the standard questions in online assessment. Also, I practiced questions from Interview Bit and company-specific ones from GFG.
-
-<!--break--> 
+I read previous test experiences from GFG, and knew that Amazon asks the standard questions in online assessment. Also, I practiced questions from Interview Bit and company-specific ones from GFG.<!--break--> 
 
 ## **Round 1: Online Assessment**
 
