@@ -9,7 +9,7 @@ time: 5
 In this post, I'll be sharing my experience of the whole placement session at IIT Guwahati, from company tests to interviews and how did I prepare for it.
 
 ## How it started for me
-Last year, when I got an internship opportunity at Amazon, I was hoping to get a  PPO (pre placement offer), and  thought I wouldn't be participating in placements, so I was prepared neither mentally nor for coding tests. I was enjoying TV shows at home when I got to know the PPO results, and I realized that the next four months would be tough.
+Last year, when I got an internship opportunity at Amazon, I was hoping to get a  PPO (pre placement offer), and  thought I wouldn't be participating in placements, so I was prepared neither mentally nor for coding tests. I was enjoying TV shows at home when I got to know the PPO results, and I realized that the next four months would be tough<!--break-->.
 
 ## Preparation
 
@@ -35,6 +35,7 @@ It would be best if you prepare for common HR questions; here is the list of a f
 - Major Strengths and how would they help you in your professional life.
 - Mention 3 areas of personal improvement. Why do you think these are improvement areas?
 - An instance where you initiated a new idea or approach and went about implementing it. How did you about doing it?
+
 - Sometimes, we may find a group of people disagreeing with our beliefs/point of view. Give us an instance where you had to convince a group of people of your point of view.
 - Give an incident in life where you showed leadership skills.
 Describe an incident where you succeeded (or failed) as a leader. What did you learn from it?
@@ -48,11 +49,14 @@ I wrote template answers for all these questions in a doc so that I don't go bla
 The first thing I did was to connect with all my friends who were appearing for placements and formed a discord channel, and I think it was a good decision of mine.
 We all started preparing for the placements, sharing resources, discussing questions, pushing each other to participate in contests, and studying other cs fundamentals together.
 Tests for companies started in the last week of September, with one test/ppt per day. It went to more than five tests a day. Here is a typical day of November:
-
+<p align="center">
 <img src="https://user-images.githubusercontent.com/45756011/147407262-d7783fc4-cac8-4e04-a543-de337fe1e790.jpeg" width="300" height="300">
-
+</p>
 After each test, we discussed solutions and alternative approaches for questions that appeared in the test; discussing solutions and approaches after the test was always helpful because we often got repeated questions.
-After almost two months of daily tests and writing nearly 50 tests, the time of interviews finally came, and believe me; It was the most high-pressure environment that I have ever experienced. Many things were going on simultaneously, end-sem examinations, BTP, and preparation for interviews.  It was literally an "endgame".
+After almost two months of daily tests and writing nearly 50 tests, the time of interviews finally came, and believe me; It was the most high-pressure environment that I have ever experienced. Many things were going on simultaneously, end-sem examinations, BTP, and preparation for interviews. 
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/45756011/147414072-7c73ef2a-22a7-452c-ad2e-529dbc8ab4ca.jpg" width="400" height="200">
+</p>
 
 During the last week of November, I started having double thoughts and overthinking many things, I avoided being alone in my room and talked to my friends and a few seniors. It helped me to get positive vibes and boosted my confidence before interviews.
 
@@ -62,6 +66,3 @@ I got to understand after interviews were over that It is a two-way process. Yes
 
 ### If you are appearing for placements
 Overall It's a very chaotic process! when you are feeling low or nervous, don’t hesitate to talk to your friends and seniors because they will definitely make you feel better. Do not take too much pressure, because one day you’ll look back and laugh at the problems you think you have today, and remember everyone gets placed.
-
-Sleep well, Take care of yourself and tell your self that ...
-
