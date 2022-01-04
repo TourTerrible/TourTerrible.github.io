@@ -25,11 +25,11 @@ projects:
     color: "#7102A0"
     tech: Arduino, C++
     github: https://github.com/TourTerrible/DIC-Terrace-Farming-Challenge
-  Circuit-X:
-    desc: A program to generating the truth table of given digital circuit in the form of image designed on Multisim.
+  Spotify-Friend Activity:
+    desc: A chrome extension where you can see what your Spotify friends have been listening to the past couple of hours as it has on desktop app.
     color: "#6182A0"
-    tech: Pyhton, OpenCV
-    github: https://github.com/TourTerrible/Circuit-X
+    tech: Javascript, npm, HTML, css
+    github: https://github.com/TourTerrible/spotify-friends-activity
   Rubik's Cube Solver:
     desc: A bot that solves 3X3 Rubik's Cube, with the help of computer vision, uses DC motors for rotating faces.
     color: "#2184A0"
@@ -44,6 +44,10 @@ projects:
 [CodeGo](https://github.com/TourTerrible/code-go)
 : A chrome extension that shows upcoming and ongoingcoding contestsof up to 8 major platforms.
 <br>User can personalise platform list, delete any contest, set reminder and add contests to google calendar.
+
+[ Circuit-X](https://github.com/TourTerrible/Circuit-X)
+: A program to generating the truth table of given digital circuit in the form of image designed on Multisim, uses openCV with python.
+
 
 [Buzzify](https://github.com/TourTerrible/Buzzify)
 : A simple music streaming app with all the fetaures including create account, search, create playlist etc.
