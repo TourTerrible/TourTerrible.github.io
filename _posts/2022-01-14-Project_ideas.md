@@ -11,7 +11,7 @@ _Nothing, just a few (project) ideas._
 
 ### Spotify Friend Activity Chrome extension
 Spotify desktop app has a side panel to view friend activity to know what your friends are listening to. Spotify web app doesn't have this feature, idea is to develop a
-chrome extension that can show a panel similar to the desktop app.
+chrome extension that can <!--break-->show a panel similar to the desktop app.
 
 UPDATE: I developed something [similar](https://github.com/TourTerrible/spotify-friends-activity), though it can be improved further. 
 
