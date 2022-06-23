@@ -36,11 +36,12 @@ Sometimes I think people don't give enough credit to luck. I believe being lucky
 
 Yes, dreams come true!
 
-<p float="left">
-  <img src="https://user-images.githubusercontent.com/45756011/175365395-7b4836a1-f06b-4ca6-9525-ffc7c4454b3a.jpeg" width="30%" />
-  <img src="https://user-images.githubusercontent.com/45756011/175366225-a0b6068f-4acc-4bb1-a6f5-5c02077f04e6.jpg" width="30.5%" /> 
-  <img src="https://user-images.githubusercontent.com/45756011/175365976-ba5f3286-1acc-4888-9c32-1f93386cbb89.jpeg" width="37.5%" />
-</p>
+<p align ="center">
+<img src="https://user-images.githubusercontent.com/45756011/175374722-cbf11ec4-829e-417f-90d8-98b407a49910.jpg" width="100%" height="100%">
+ </p>
+
 
 signing off, 180108002.
+
+
 
