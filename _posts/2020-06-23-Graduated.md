@@ -1,5 +1,5 @@
 ---
-title: "I Graduated"
+title: "Yes, I Graduated"
 date: 2022-06-23
 layout: post
 # url:
@@ -9,7 +9,7 @@ time: 2
 _Alhamdulillah!, I graduated, I graduated from IIT Guwahati._
 
 
-In my Hometown, most people do not even know about IIT. I don't exactly remember who told me about IIT;  I guess I was in 8th standard, and I remember asking my father for admission into FIITJEE, but It was not possible considering the coaching institute charging high fees. Then someone told me about Dakshana, an NGO that provides free coaching for IITJEE, and that was it. I started burning the midnight oil, made it to Dakshana Bundi (Kota), worked hard with focus, and got admitted to IIT Guwahati on 21 July 2018.
+In my Hometown, most people do not even know about IIT. I don't exactly remember who told me about IIT;  I guess I was in 8th standard, and I remember asking my father for admission into FIITJEE, but It was not possible considering the coaching institute charging high fees. Then someone<!--break-->  told me about Dakshana, an NGO that provides free coaching for IITJEE, and that was it. I started burning the midnight oil, made it to Dakshana Bundi (Kota), worked hard with focus, and got admitted to IIT Guwahati on 21 July 2018.
 <p align ="center">
 <img src="https://user-images.githubusercontent.com/45756011/175364482-70b71081-fd19-4148-b222-091d8680462e.jpeg" width="50%" height="50%">
  </p>
