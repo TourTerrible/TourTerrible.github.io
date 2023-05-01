@@ -1,6 +1,6 @@
 ---
 title: "Project Ideas"
-date: 2022-01-14
+date: 2023-05-01
 layout: post
 # url:
 # medium: 
@@ -9,17 +9,24 @@ time: 2
 
 _Nothing, just a few (project) ideas._
 
-### Spotify Friend Activity Chrome extension
+### 2023: Storing Data on Youtube
+
+Youtube allows us to upload videos upto 128GB/256GB ( not sure ). Idea here is to convert any data format to video. ( data -> bit -> pixels -> frames -> video ) and upload it on youtube to avail unlimited ( not sure ) storage. Not sure if this would be efficient, I guess not. One would also face problem when recoving original files. This could be optimized with proper encoding/decoding.
+Additionally this can be enchnaced and one may create an API that can be used to create WebApp/Mobile App. 
+
+Found this on internet: https://github.com/bfaure/Data2Video
+
+### 2022: Spotify Friend Activity Chrome extension
 Spotify desktop app has a side panel to view friend activity to know what your friends are listening to. Spotify web app doesn't have this feature, idea is to develop a
 chrome extension that can <!--break-->show a panel similar to the desktop app.
 
 UPDATE: I developed something [similar](https://github.com/TourTerrible/spotify-friends-activity), though it can be improved further. 
 
-### Unlimited cloud storage using Telegram
+### 2022: Unlimited cloud storage using Telegram
 Telegram provides unlimited free storage, with the help of telegram API a web app can be developed similar to G-drive that uses telegram storage in the backend.
 A [similar project](https://github.com/SlavikMIPT/tgcloud) is developed already by someone, but it is command-based and outdated, requiring too much effort to set up.
 
-### MS-Teams class attending bot
+### 2022: MS-Teams class attending bot
 
 A python-based script/bot or a chrome extension that attends classes without requiring even a single click once run in the background.
 A [chrome extension](https://chrome.google.com/webstore/detail/n-bot-microsoft-teams-onl/onbankppjhoeccfkpnhogojjllbefglb) is already present on the chrome web store but it only works 
